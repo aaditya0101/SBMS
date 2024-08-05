@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <header>
+        <h1>Inventory Management</h1>
+    </header>
+    
+    <main>
+        <section id="inventorySection">
+            <h2>Manage Inventory</h2>
+            <form id="inventoryForm">
+                <label for="itemName">Item Name:</label>
+                <input type="text" id="itemName" required>
+
+                <label for="itemQuantity">Quantity:</label>
+                <input type="number" id="itemQuantity" required>
+
+                <label for="itemPrice">Price:</label>
+                <input type="number" id="itemPrice" step="0.01" required>
+
+                <button type="button" onclick="addItem()">Add Item</button>
+            </form>
+
+            <table id="inventoryTable">
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Inventory items will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BillSmart. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts3.js"></script>
+</body>
+</html>
+

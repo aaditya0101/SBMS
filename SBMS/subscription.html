@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Options</title>
+    <link rel="stylesheet" href="styles8.css">
+</head>
+<body>
+    <header>
+        <h1>Subscription Options</h1>
+    </header>
+    
+    <main>
+        <section id="subscriptionSection">
+            <h2>Select Your Plan</h2>
+            
+            <div class="subscription-plan" data-plan="basic">
+                <h3>Basic Plan</h3>
+                <p class="price">$10 / month</p>
+                <ul>
+                    <li>Basic Features</li>
+                    <li>1 GB Storage</li>
+                    <li>Email Support</li>
+                </ul>
+                <button onclick="selectPlan('Basic Plan', 10)"><a href="payment.html">Select</a></button>
+            </div>
+
+            <div class="subscription-plan" data-plan="standard">
+                <h3>Standard Plan</h3>
+                <p class="price">$25 / month</p>
+                <ul>
+                    <li>Standard Features</li>
+                    <li>5 GB Storage</li>
+                    <li>Phone & Email Support</li>
+                </ul>
+                <button onclick="selectPlan('Standard Plan', 25)"><a href="payment.html">Select</a></button>
+            </div>
+
+            <div class="subscription-plan" data-plan="premium">
+                <h3>Premium Plan</h3>
+                <p class="price">$50 / month</p>
+                <ul>
+                    <li>All Features</li>
+                    <li>Unlimited Storage</li>
+                    <li>24/7 Support</li>
+                </ul>
+                <button onclick="selectPlan('Premium Plan', 50)"><a href="payment.html">Select</a></button>
+            </div>
+            
+            <section id="selectedPlanSection" class="hidden">
+                <h2>Selected Plan</h2>
+                <p id="selectedPlanDetails"></p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Smart Billing System. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts8.js"></script>
+</body>
+</html>
